@@ -6,7 +6,7 @@ window.onload = function()
     {
         let year = Math.round(parseFloat(document.getElementById("year").value));
         let out = document.getElementById("output");
-        if(isNaN(year)){
+        if(isNaN(year) || year <= 0){
             alert("Hibás adat! ");
         }else{
             if(year % 4 == 0){

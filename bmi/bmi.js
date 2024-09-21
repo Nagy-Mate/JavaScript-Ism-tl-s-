@@ -11,7 +11,7 @@ window.onload = function()
         console.log(weight, height)
         let bmiValue = Math.round((weight / (height*height)) * 100) / 100 ;
         
-        if(isNaN(bmiValue)){
+        if(isNaN(bmiValue) || weight <= 0 || height <= 0){
             alert("Hibás adat!");
         }
         else{

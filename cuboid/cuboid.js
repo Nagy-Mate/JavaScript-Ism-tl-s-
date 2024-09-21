@@ -12,7 +12,7 @@ window.onload = function()
         let side3 = parseFloat(document.getElementById("side3").value);
         let surfaceValue = Math.round(SurfaceArea(side1, side2, side3) * 100) / 100;
         let volumeValue  = Math.round(Volume(side1, side2, side3) * 100) / 100;
-        if(isNaN(surfaceValue) || isNaN(volumeValue))
+        if(isNaN(surfaceValue) || isNaN(volumeValue) || side1 <= 0 || side2 <= 1 || side3 <= 0)
         {
             alert("Hibás adat!");
         }
