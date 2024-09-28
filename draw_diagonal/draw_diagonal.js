@@ -28,11 +28,12 @@ window.onload = function()
                     if (j === 0 || j === number - 1 || i === 0 || i === number - 1 || i === j) {
                         row += '%';
                     } else {
-                        row += ' ';
+                        row += `&nbsp`;
                     }
                     
                 }
-                console.log(row);
+                out.innerHTML += row;
+                out.innerHTML += `<br>`;
             }
             
         }

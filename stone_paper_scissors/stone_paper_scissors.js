@@ -14,7 +14,7 @@ window.onload = function()
             out.innerHTML = "Kettes játékos nyert! ";
         }else if(p1 === 1 && p2 === 3){
             out.innerHTML = "Egyes játékos nyert! ";
-        }else if(){
+        }else if(true){
             
         }
 
